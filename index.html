@@ -23,13 +23,13 @@
     </style>
   </head>
   <body class="bg-[#F8F8F8]">
+
     <!-- ======================= Main section ===================== -->
-    <main class="grid grid-cols-1 md:grid-cols-4 p-14 my-14 gap-6 lg:mx-10">
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-14 my-14 gap-6 lg:mx-10">
 
-        <h1 class="text-5xl col-span-3 font-bold">Kitchenware</h1>
+        <h1 class="text-5xl col-span-1 md:col-span-2 lg:col-span-3 font-bold ">Kitchenware:</h1>
       <!-- cards area======================= -->
-      <div class="col-span-3 grid grid-cols-3 gap-6 lg:h-[1300px]">
-
+      <div class="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:h-[1300px] ">
 
         <!-- ======================= card-1 ===================== -->
         <div class="card bg-base-100 shadow-xl bg-white  h-[350px]" id="card-1">
@@ -109,7 +109,7 @@
           </div>
         </div>
 
-        <h1 class="text-5xl col-span-3 font-bold mt-10">Sportswear</h1>
+        <h1 class="text-5xl col-span-1 lg:col-span-3 font-bold mt-10">Sportswear:</h1>
         <!-- ======================= card-4 ===================== -->
         <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-4">
           <figure class="p-6">
@@ -190,7 +190,8 @@
 
 
 
-<h1 class="font-bold text-5xl col-span-3 mt-10">Furniture</h1>
+<h1 class="font-bold text-5xl col-span-1 lg:col-span-3 mt-10">Furniture:</h1>
+
         <!-- ======================= card-7 ===================== -->
         <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-7">
           <figure class="p-6">
@@ -273,7 +274,7 @@
       </div>
 
       <!-- calculation area ==================================== -->
-      <div class="flex flex-col gap-14">
+      <div class="flex flex-col gap-14 ">
         <!-- ======================= Have Coupon Code area===================== -->
         <div class="card  h-[150px] bg-base-100 shadow-xl">
             <div class="card-body">
@@ -300,13 +301,29 @@
               <h1 class="font-semibold">Total: <span class="text-[#11111180]" id="after-discount-total">00.00</span><span class="text-[#11111180]">TK</span></h1>
             </div>
 
-            <button id="make-purchase-btn" disabled class="absolute -bottom-5 left-14  btn w-2/3 mx-auto  bg-[#E527B2] hover:bg-[#E527B2] text-white">Make Purchase</button>
+            <button id="make-purchase-btn" disabled class="absolute -bottom-5 left-14  btn w-2/3 mx-auto  bg-[#E527B2] hover:bg-[#E527B2] text-white" onclick="my_modal_5.showModal()" >Make Purchase</button>
           </div>
             
       </div>
        
       </div>
     </main>
+
+<!-- ==================== modal area =========================== -->
+<dialog id="my_modal_5" class="modal  sm:modal-middle" >
+
+  <form method="dialog" class="modal-box flex flex-col items-center justify-center">
+    <img src="images/congo.png" alt="" class="lg:my-10">
+    <h3 class="font-extrabold text-lg  lg:text-5xl ">Congratulations!</h3>
+    <p class=" text-[#11111180] mt-4">Your Purchase the product</p>
+
+    <div class="modal-action">
+      <a href="index.html" class="btn mx-auto bg-[#E527B2] hover:bg-[#E527B2] text-white">Go to home</a>
+    </div>
+  </form>
+</dialog>
+
+
 
     <script src="index.js"></script>
     <script src="function.js"></script>

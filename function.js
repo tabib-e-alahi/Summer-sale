@@ -1,5 +1,5 @@
 let totalPrice = 0;
-
+// getting inner text from an element ===============
 function getInnerTextOfElement(eleId) {
   const element = document.getElementById(eleId);
   const elementText = element.innerText;
@@ -7,6 +7,7 @@ function getInnerTextOfElement(eleId) {
   return elementText;
 }
 
+// setting the product name to the card calculations area 
 function setProductName(productName) {
   const targetElementParent = document.getElementById("product-name-container");
   const count = targetElementParent.childElementCount;
@@ -18,7 +19,7 @@ function setProductName(productName) {
   targetElementParent.appendChild(h1);
 }
 
-
+// getting inner text of price area and convert it into floating ===============
 function getPriceFromElement(eleId){
   const element = document.getElementById(eleId);
   const elementPriceString = element.innerText;
@@ -28,6 +29,7 @@ function getPriceFromElement(eleId){
   return elementPrice;
 }
 
+// setting inner text of price area  to the calculations card ===============
 function setProductPrice(productPrice){
   const targetElement = document.getElementById('total-price');
   totalPrice += productPrice;
@@ -41,9 +43,10 @@ function setProductPrice(productPrice){
   
 }
 
+// discount calculations =========================
 function makeCalculation(){
   const totalPrice = getPriceFromElement('total-price');
-  // console.log(typeof totalPrice, totalPrice);
+
   const discountedPrice = (totalPrice *20)/100;
   const newTotal = totalPrice - discountedPrice;
 
