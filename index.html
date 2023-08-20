@@ -28,11 +28,11 @@
 
         <h1 class="text-5xl col-span-3 font-bold">Kitchenware</h1>
       <!-- cards area======================= -->
-      <div class="col-span-3 grid grid-cols-3 gap-6">
+      <div class="col-span-3 grid grid-cols-3 gap-6 lg:h-[1300px]">
 
 
         <!-- ======================= card-1 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white" id="card-1">
+        <div class="card bg-base-100 shadow-xl bg-white  h-[350px]" id="card-1">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -58,7 +58,7 @@
         </div>
 
         <!-- ======================= card-2 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white " id="card-2">
+        <div class="card bg-base-100 shadow-xl bg-white  h-[350px]" id="card-2">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -76,15 +76,15 @@
               <img src="images/empty-star.png" alt="" />
               <img src="images/empty-star.png" alt="" />
             </div>
-            <h2 class="card-title" id="card-2-title">K. Accessories</h2>
+            <h2 class="card-title" id="card-2-title">Cooking Uses</h2>
             <p class="text-[#11111180]">
-              <span id="card-2-price ">25.00</span>tk
+              <span id="card-2-price">25.00</span>tk
             </p>
           </div>
         </div>
 
         <!-- ======================= card-3 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white" id="card-3">
+        <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-3">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -111,7 +111,7 @@
 
         <h1 class="text-5xl col-span-3 font-bold mt-10">Sportswear</h1>
         <!-- ======================= card-4 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white" id="card-4">
+        <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-4">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -137,7 +137,7 @@
         </div>
 
         <!-- ======================= card-5 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white " id="card-5">
+        <div class="card bg-base-100 shadow-xl bg-white  h-[350px]" id="card-5">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -157,13 +157,13 @@
             </div>
             <h2 class="card-title" id="card-5-title">Full Jersey Set</h2>
             <p class="text-[#11111180]">
-              <span id="card-5-price ">69.00</span>tk
+              <span id="card-5-price">69.00</span>tk
             </p>
           </div>
         </div>
 
         <!-- ======================= card-6 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white" id="card-6">
+        <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-6">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -192,7 +192,7 @@
 
 <h1 class="font-bold text-5xl col-span-3 mt-10">Furniture</h1>
         <!-- ======================= card-7 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white" id="card-7">
+        <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-7">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -218,7 +218,7 @@
         </div>
 
         <!-- ======================= card-8 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white " id="card-8">
+        <div class="card bg-base-100 shadow-xl bg-white  h-[350px]" id="card-8">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -238,13 +238,13 @@
             </div>
             <h2 class="card-title" id="card-8-title">Children play</h2>
             <p class="text-[#11111180]">
-              <span id="card-8-price ">299.00</span>tk
+              <span id="card-8-price">299.00</span>tk
             </p>
           </div>
         </div>
 
         <!-- ======================= card-9 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white" id="card-9">
+        <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-9">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -270,12 +270,6 @@
         </div>
 
 
-
-
-
-
-      
-
       </div>
 
       <!-- calculation area ==================================== -->
@@ -285,9 +279,10 @@
             <div class="card-body">
               <h2 class="card-title">Have Coupon?</h2>
               <div class="join ">
-                <input class="input input-bordered join-item w-2/3" placeholder="Coupon Code"/>
+                <input id="coupon-code-field" class="input input-bordered join-item w-2/3" placeholder="Coupon Code"/>
                 <button id="apply-btn" disabled class="btn join-item rounded-r-full bg-[#E527B2] text-white hover:bg-[#E527B2]">Apply</button>
               </div>
+              <p class="text-red-500  pl-2 hidden" id="invalid-coupon">Invalid coupon code</p>
             </div>         
           </div>
 
@@ -297,11 +292,14 @@
              
             </div>
             <hr class="bg-[#11111126] w-[294px] h-[1px] mx-auto ">
-            <div class="items-center text-left my-10 ml-4">
-              <h1 class="font-semibold ">Total price: <span class="text-[#11111180]">00.00</span><span class="text-[#11111180]">TK</span></h1>
-              <h1 class="font-semibold my-3">Discount : <span class="text-[#11111180]">00.00</span><span class="text-[#11111180]">TK</span></h1>
-              <h1 class="font-semibold">Total: <span class="text-[#11111180]">00.00</span><span class="text-[#11111180]">TK</span></h1>
+
+            <div class=" text-left my-10 ml-4">
+
+              <h1 class="font-semibold ">Total price: <span class="text-[#11111180]" id="total-price">00.00</span><span class="text-[#11111180]">TK</span></h1>
+              <h1 class="font-semibold my-3">Discount : <span class="text-[#11111180]" id="discount-price">00.00</span><span class="text-[#11111180]">TK</span></h1>
+              <h1 class="font-semibold">Total: <span class="text-[#11111180]" id="after-discount-total">00.00</span><span class="text-[#11111180]">TK</span></h1>
             </div>
+
             <button id="make-purchase-btn" disabled class="absolute -bottom-5 left-14  btn w-2/3 mx-auto  bg-[#E527B2] hover:bg-[#E527B2] text-white">Make Purchase</button>
           </div>
             
