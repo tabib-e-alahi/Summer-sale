@@ -66,6 +66,13 @@ document.getElementById('apply-btn').addEventListener('click',function(){
   
 })
 
+document.getElementById('sell-btn').addEventListener('click',function(){
+  const buttonText = document.getElementById('sell-btn');
+  const couponInputField = document.getElementById('coupon-code-field');
+
+  couponInputField.value = buttonText.innerText;
+})
+
 function reduceCode(nameEleId, priceEleId) {
   const productName = getInnerTextOfElement(nameEleId);
   setProductName(productName);

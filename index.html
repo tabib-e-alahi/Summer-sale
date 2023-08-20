@@ -22,17 +22,41 @@
       }
     </style>
   </head>
-  <body class="bg-[#F8F8F8]">
+  <body class="">
+    <header class=" 0 bg-[#F9F6E2]">
+
+        <section class="grid lg:grid-cols-2 lg:w-10/12 lg:mx-auto lg:py-2">
+
+          <div class="flex flex-col items-center justify-center">
+            <p class="font-medium text-3xl text-center">---SALE FEVER---</p>
+            <h1 class="font-bold text-6xl text-center my-11">Purchase TK 200 or above & get 20% off</h1>
+            <p class="font-medium text-2xl">Use Promo Code <button class="btn font-semibold text-2xl bg-[#E527B2] hover:bg-[#E527B2] text-white" id="sell-btn">SELL200</button></p>
+          </div>
+    
+          <div class="w-full">
+            <img class="w-full mx-auto" src="images/Summer 1.png" alt="">
+          </div>
+
+
+        </section>
+
+    </header>
 
     <!-- ======================= Main section ===================== -->
-    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-14 lg:pt-14 lg:pb-52 gap-6 lg:mx-10">
+    <main class="bg-[#F8F8F8]">
 
-        <h1 class="text-5xl col-span-1 md:col-span-2 lg:col-span-3 font-bold ">Kitchenware:</h1>
+      <div
+      class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-14 lg:pt-28 lg:pb-52 gap-6 lg:w-11/12 lg:mx-auto"
+    >
+      <h1 class="text-5xl col-span-1 md:col-span-2 lg:col-span-3 font-bold">
+        Kitchenware:
+      </h1>
       <!-- cards area======================= -->
-      <div class="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:h-[1300px] ">
-
+      <div
+        class="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:h-[1300px]"
+      >
         <!-- ======================= card-1 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white  h-[350px]" id="card-1">
+        <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-1">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -58,7 +82,7 @@
         </div>
 
         <!-- ======================= card-2 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white  h-[350px]" id="card-2">
+        <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-2">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -109,7 +133,9 @@
           </div>
         </div>
 
-        <h1 class="text-5xl col-span-1 lg:col-span-3 font-bold mt-10">Sportswear:</h1>
+        <h1 class="text-5xl col-span-1 lg:col-span-3 font-bold mt-10">
+          Sportswear:
+        </h1>
         <!-- ======================= card-4 ===================== -->
         <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-4">
           <figure class="p-6">
@@ -137,7 +163,7 @@
         </div>
 
         <!-- ======================= card-5 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white  h-[350px]" id="card-5">
+        <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-5">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -188,9 +214,9 @@
           </div>
         </div>
 
-
-
-<h1 class="font-bold text-5xl col-span-1 lg:col-span-3 mt-10">Furniture:</h1>
+        <h1 class="font-bold text-5xl col-span-1 lg:col-span-3 mt-10">
+          Furniture:
+        </h1>
 
         <!-- ======================= card-7 ===================== -->
         <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-7">
@@ -219,7 +245,7 @@
         </div>
 
         <!-- ======================= card-8 ===================== -->
-        <div class="card bg-base-100 shadow-xl bg-white  h-[350px]" id="card-8">
+        <div class="card bg-base-100 shadow-xl bg-white h-[350px]" id="card-8">
           <figure class="p-6">
             <div class="bg-[#1111110D] rounded-lg w-[302px] h-[200px] p-6">
               <img
@@ -269,61 +295,94 @@
             </p>
           </div>
         </div>
-
-
       </div>
 
       <!-- calculation area ==================================== -->
-      <div class="flex flex-col gap-14 ">
+      <div class="flex flex-col gap-14">
         <!-- ======================= Have Coupon Code area===================== -->
-        <div class="card  h-[150px] bg-base-100 shadow-xl">
-            <div class="card-body">
-              <h2 class="card-title">Have Coupon?</h2>
-              <div class="join ">
-                <input id="coupon-code-field" class="input input-bordered join-item w-2/3" placeholder="Coupon Code"/>
-                <button id="apply-btn" disabled class="btn join-item rounded-r-full bg-[#E527B2] text-white hover:bg-[#E527B2]">Apply</button>
-              </div>
-              <p class="text-red-500  pl-2 hidden" id="invalid-coupon">Invalid coupon code</p>
-            </div>         
+        <div class="card h-[150px] bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h2 class="card-title">Have Coupon?</h2>
+            <div class="join">
+              <input
+                id="coupon-code-field"
+                class="input input-bordered join-item w-2/3"
+                placeholder="Coupon Code"
+              />
+              <button
+                id="apply-btn"
+                disabled
+                class="btn join-item rounded-r-full bg-[#E527B2] text-white hover:bg-[#E527B2]"
+              >
+                Apply
+              </button>
+            </div>
+            <p class="text-red-500 pl-2 hidden" id="invalid-coupon">
+              Invalid coupon code
+            </p>
+          </div>
+        </div>
+
+        <!-- ==================== calculation area ======================= -->
+        <div class="relative rounded-lg bg-base-100 shadow-xl bg-white pt-6">
+          <div
+            class="p-6 flex flex-col font-bold gap-4"
+            id="product-name-container"
+          ></div>
+          <hr class="bg-[#11111126] w-[294px] h-[1px] mx-auto" />
+
+          <div class="text-left my-10 ml-4">
+            <h1 class="font-semibold">
+              Total price:
+              <span class="text-[#11111180]" id="total-price">00.00</span
+              ><span class="text-[#11111180]">TK</span>
+            </h1>
+            <h1 class="font-semibold my-3">
+              Discount :
+              <span class="text-[#11111180]" id="discount-price">00.00</span
+              ><span class="text-[#11111180]">TK</span>
+            </h1>
+            <h1 class="font-semibold">
+              Total:
+              <span class="text-[#11111180]" id="after-discount-total"
+                >00.00</span
+              ><span class="text-[#11111180]">TK</span>
+            </h1>
           </div>
 
-           <!-- ==================== calculation area ======================= -->
-          <div class=" relative rounded-lg bg-base-100 shadow-xl bg-white  pt-6">
-            <div class="p-6 flex flex-col font-bold gap-4" id="product-name-container">
-             
-            </div>
-            <hr class="bg-[#11111126] w-[294px] h-[1px] mx-auto ">
-
-            <div class=" text-left my-10 ml-4">
-
-              <h1 class="font-semibold ">Total price: <span class="text-[#11111180]" id="total-price">00.00</span><span class="text-[#11111180]">TK</span></h1>
-              <h1 class="font-semibold my-3">Discount : <span class="text-[#11111180]" id="discount-price">00.00</span><span class="text-[#11111180]">TK</span></h1>
-              <h1 class="font-semibold">Total: <span class="text-[#11111180]" id="after-discount-total">00.00</span><span class="text-[#11111180]">TK</span></h1>
-            </div>
-
-            <button id="make-purchase-btn" disabled class="absolute -bottom-5 left-14  btn w-2/3 mx-auto  bg-[#E527B2] hover:bg-[#E527B2] text-white" onclick="my_modal_5.showModal()" >Make Purchase</button>
-          </div>
-            
+          <button
+            id="make-purchase-btn"
+            disabled
+            class="absolute -bottom-5 left-14 btn w-2/3 mx-auto bg-[#E527B2] hover:bg-[#E527B2] text-white"
+            onclick="my_modal_5.showModal()"
+          >
+            Make Purchase
+          </button>
+        </div>
       </div>
-       
-      </div>
+    </div>
+
     </main>
 
-<!-- ==================== modal area =========================== -->
-<dialog id="my_modal_5" class="modal  sm:modal-middle" >
+    <!-- ==================== modal area =========================== -->
+    <dialog id="my_modal_5" class="modal sm:modal-middle">
+      <form
+        method="dialog"
+        class="modal-box flex flex-col items-center justify-center"
+      >
+        <img src="images/congo.png" alt="" class="lg:my-10" />
+        <h3 class="font-extrabold text-lg lg:text-5xl">Congratulations!</h3>
+        <p class="text-[#11111180] mt-4">Your Purchase the product</p>
 
-  <form method="dialog" class="modal-box flex flex-col items-center justify-center">
-    <img src="images/congo.png" alt="" class="lg:my-10">
-    <h3 class="font-extrabold text-lg  lg:text-5xl ">Congratulations!</h3>
-    <p class=" text-[#11111180] mt-4">Your Purchase the product</p>
-
-    <div class="modal-action">
-      <a href="index.html" class="btn mx-auto bg-[#E527B2] hover:bg-[#E527B2] text-white">Go to home</a>
-    </div>
-  </form>
-</dialog>
-
-
+        <div class="modal-action">
+          <a
+            href="index.html"
+            class="btn mx-auto bg-[#E527B2] hover:bg-[#E527B2] text-white"
+            >Go to home</a
+          >
+        </div>
+      </form>
+    </dialog>
 
     <script src="index.js"></script>
     <script src="function.js"></script>
